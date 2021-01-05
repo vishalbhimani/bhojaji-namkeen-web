@@ -189,7 +189,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 63px;
+  position: absolute;
+  top: 4px;
+  -webkit-filter: drop-shadow(2px 2px 4px #f58433);
+  filter: drop-shadow(2px 2px 4px #f58433);
 }
 
 @media (max-width: 992px) {
@@ -197,6 +201,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     padding: 15px 0;
     background: transparent;
+    min-height: 57px;
   }
   #header .logo {
     font-size: 28px;
@@ -783,6 +788,9 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio {
+  padding-top: 0 !important;
+}
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 25px auto;
@@ -818,11 +826,11 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-info {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   left: 30px;
   right: 30px;
-  bottom: 0;
+  bottom: 20px;
   z-index: 3;
   transition: all ease-in-out 0.3s;
   background: rgba(255, 255, 255, 0.9);
@@ -1317,8 +1325,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #0c0c0c;
-  padding: 0 0 30px 0;
+  background: #211f54;
+  padding: 0;
   color: #fff;
   font-size: 14px;
 }
@@ -1415,7 +1423,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #eb4444;
+  color: #f57921;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1452,9 +1460,10 @@ section {
 }
 
 #footer .copyright {
-  border-top: 1px solid #262626;
+  background-color: #f57921;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #footer .credits {
@@ -1475,7 +1484,7 @@ section {
 }
 
 .footer-img-logo {
-  max-width: 500px;
+  max-width: 360px;
   width: 100%;
   -webkit-filter: drop-shadow(2px 2px 4px #f58433);
   filter: drop-shadow(2px 2px 4px #f58433);
