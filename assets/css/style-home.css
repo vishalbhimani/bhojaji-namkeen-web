@@ -37,6 +37,7 @@ header {
 header .logo {
     position: relative;
     max-width: 200px;
+    filter: drop-shadow(2px 2px 15px #f58433);
 }
 header .navigation {
     position: relative;
@@ -163,7 +164,15 @@ header .navigation li a {
         padding: 150px 40px;
     }
     .sci {
-        left: 40px;
+        left: 0;
+        right: 0;
+        bottom: 75px;
+    }
+    .copy-home {
+        left: 0;
+        right: 0 !important;
+        bottom: 10px !important;
+        text-align: center;
     }
     .content {
         flex-direction: column;
@@ -173,7 +182,11 @@ header .navigation li a {
         max-width: 100%;
     }
     .swiper-slide {
+        width: 200px;
         height: 300px;
+    }
+    .swiper-container {
+        padding-bottom: 20px;
     }
     header .navigation {
         display: none;
@@ -217,4 +230,15 @@ header .navigation li a {
         background-position: center;
         cursor: pointer;
     }
+}
+
+.copy-home {
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #fff;
+    font-size: 11px;
 }
